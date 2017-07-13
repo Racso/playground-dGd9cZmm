@@ -1,11 +1,15 @@
-title : Python
+title : Shortest paths with Dijkstra's Algorithm
 
 # Table of content
 plan:
-  - title: Welcome # Set the page title
-    statement: markdowns/welcome.md # Set the file path to the page content
-#  - title: Another Page
-#    statement: markdowns/another-page.md
+  - title: Introduction # Set the page title
+    statement: markdowns/intro.md # Set the file path to the page content
+  - title: Dijkstra's Algorithm
+    statement: markdowns/dijkstra.md
+  - title: Keeping track of paths
+    statement: markdowns/dijkstra2.md
+  - title: Ending
+    statement: markdowns/outro.md
 
 
 # Settings for your programming projects and the associated Docker images
