@@ -1,14 +1,14 @@
-title : Shortest paths with Dijkstra's Algorithm
+title : Los caminos más cortos con el algoritmo de Dijkstra
 
 # Table of content
 plan:
-  - title: Introduction # Set the page title
-    statement: markdowns/intro.md # Set the file path to the page content
-  - title: Dijkstra's Algorithm
+  - title: Introducción
+    statement: markdowns/intro.md
+  - title: El algoritmo de Dijkstra
     statement: markdowns/dijkstra.md
-  - title: Keeping track of paths
+  - title: Llevando la cuenta de los caminos
     statement: markdowns/dijkstra2.md
-  - title: Ending
+  - title: Cierre
     statement: markdowns/outro.md
 
 
