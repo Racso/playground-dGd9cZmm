@@ -25,13 +25,13 @@ Supón que te pregunto cuánto tiempo tomaría ir de C a B. Podrías decir que t
 
 Formalmente, un camino es una _secuencia de aristas que conectan una secuencia de vértices distintos_. Si no hay aristas paralelas en tu grafo (es decir, aristas que conectan el mismo par de nodos, como si tuvieras dos carreteras conectando directamente las mismas dos ciudades), puedes describir un camino de manera simplificada como la lista de nodos que éste conecta. Por ejemplo, los dos caminos que mencionamos en nuestro ejemplo son C, B y C, A, B.
 
-# Shortest paths
+# Los caminos más cortos
 
-As we said before, it takes 7 hours to traverse path C, B, and only 4 hours to traverse path C, A, B. Those times are the _weights_ of those paths. As such, we say that the weight of a path is the sum of the weights of the edges it contains.
+Como dijimos antes, toma 7 horas atravesar el camino C, B, y sólo 4 horas atravesar el camino C, A, B. Esos tiempos son los *pesos* de esos caminos. Así, decimos que el peso de un camino es la suma de los pesos de sus aristas.
 
-As you can see, path C, A, B is shorter than path C, B. In fact, it is the shortest path between C and B (try to find a shorter one!). Of course, in lots of applications, it would be really useful to be able to calculate in advance what the shortest path between two nodes is. What's the shortest route I can take to go home? What's the cheapest way I can fly from Bucaramanga to Hawaii? How can I efficiently route this data packet from node 1 to node 2 in this network? That kind of questions can be solved with shortest path algorithms or variants.
+Como puedes ver, el camino C, A, B es más corto que el camino C, B. De hecho, es el camino más corto entre C y B (¡intenta encontrar uno más corto!). Por supuesto, en muchas aplicaciones es muy útil tener la capacidad de calcular de antemano cuál es el camino más corto entre dos nodos. ¿Cuál es la ruta más corta que puedo tomar para ir a casa? ¿Cuál es la forma más barata de volar desde Bucaramanga hasta Hawaii? ¿Cómo puedo enrutar este paquete de datos de forma eficiente entre dos nodos de esta red? Ese tipo de preguntas pueden resolverse con algoritmos de enrutamiento y variantes.
 
-So... How can we obtain the shortest path in a graph? There are several options. Dijkstra's algorithm is one of them! Keep reading to know how!
+Entonces, ¿cómo podemos obtener el camino más corto en un grafo? Hay varias opciones. El algoritmo de Dijkstra es una de ellas; ¡sigue leyendo para saber cómo!
 
 ?[Ejercicio: ¿Cuál es el peso del camino más corto entre C y E?]
 -[ ] 8
