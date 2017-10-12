@@ -19,11 +19,11 @@ Ahora bien, no todos los caminos son iguales. Algunos son más largos, algunos n
 
 Como descubrirás, puedes representar muchas cosas distintas (tiempo, distancia, dinero...) con los pesos en las aristas de un grafo.
 
-# Paths
+# Caminos
 
-Suppose that I ask you how much time would it take you to go from C to B. You may say that it would take you 7 hours, by taking the road that connects them directly. However, you may also say that you can complete the trip in only 4 hours if you go from C to A and then from A to B. There are other routes you can take.
+Supón que te pregunto cuánto tiempo tomaría ir de C a B. Podrías decir que tomaría 7 horas si se toma el camino que las conecta directamente. Sin embargo, también podrías decir que puedes hacer el viaje en sólo 4 horas si vas de C a A y luego de A a B. Hay otras rutas que podrías tomar.
 
-Formally, a path is _a sequence of edges which connect a sequence of distinct vertices_. If there are no multiple edges in your graph (i.e. parallel edges that connect the same pair of nodes, as if you had two different roads directly connecting the same two cities), you can describe a path simply as the list of nodes it connects. For example, the two paths we mentioned in our example are C, B and C, A, B.
+Formalmente, un camino es una _secuencia de aristas que conectan una secuencia de vértices distintos_. Si no hay aristas paralelas en tu grafo (es decir, aristas que conectan el mismo par de nodos, como si tuvieras dos carreteras conectando directamente las mismas dos ciudades), puedes describir un camino de manera simplificada como la lista de nodos que éste conecta. Por ejemplo, los dos caminos que mencionamos en nuestro ejemplo son C, B y C, A, B.
 
 # Shortest paths
 
@@ -33,7 +33,7 @@ As you can see, path C, A, B is shorter than path C, B. In fact, it is the short
 
 So... How can we obtain the shortest path in a graph? There are several options. Dijkstra's algorithm is one of them! Keep reading to know how!
 
-?[Exercise: What is the weight of the shortest path between C and E?]
+?[Ejercicio: ¿Cuál es el peso del camino más corto entre C y E?]
 -[ ] 8
 -[ ] 9
 -[x] 5
