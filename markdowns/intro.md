@@ -1,21 +1,23 @@
-# Welcome!
+# ¡Te doy la bienvenida!
 
-This short playground will give you some fundamentals about Dijkstra's algorithm.
+Este _playground_ corto te dará algunos fundamentos sobre el algoritmo de Dijkstra.
 
-# Prerequisites
-* Graph Theory Basics: graphs, vertices and edges. You can learn all of it in this Playground: [Graph Theory Basics](https://tech.io/playgrounds/5470/graph-theory-basics).
+# Prerrequisitos
+* Fundamentos de teoría de grafos: grafos, vértices y aristas. Puedes aprenderlo todo en este _playground_: [Fundamentos de teoría de grafos](https://tech.io/playgrounds/7023/fundamentos-de-teoria-de-grafos-espeng).
 
-# Weighted graphs
+# Grafos con pesos
 
-In some applications, it's useful to model data as a graph with weighted edges. These graphs are called "weighted graphs". What are "weighted edges", you wonder? Consider this graph:
+En algunas aplicaciones, es útil modelar información con un grafo con aristas con pesos. A esos grafos se les llama "grafos con pesos". 
 
-![Graph example](graph.png "")
+Te estarás preguntando qué son las "aristas con pesos". Mira este grafo:
 
-Let's imagine that each node is a City, and each edge is an existing road between two cities. This means that you can drive from A to B directly. However, you can't drive from A to D directly, as there's no road between those cities; instead, for example, you need to go from A to B and then from B to D.
+![Grafo de ejemplo](graph.png "")
 
-Now, not every road is equal. Some of them are longer, some aren't in good shape (so you need to go slowly), some have more traffic... In short: you need more time for traversing some roads than other. We may represent that time with weights that we assign to the roads (edges of the graph). In the example, let's assume that each number represent the amount of time in hours that it takes you to take a road. This would mean that going from A to B takes 3 hours if you use the road that connects them directly.
+Imaginemos que cada nodo es una ciudad, y que cada arista es un camino existente entre dos ciudades. Ello significa que puedes conducir de A a B directamente. Sin embargo, no puedes conducir de A a D directamente, porque no hay camino entre esas ciudades; en vez de eso, tendrías que ir, por ejemplo, de A a B y luego de B a D.
 
-As you will discover, you can represent a lot of different things (time, distance, money...) with the weights in the edges of a graph.
+Ahora bien, no todos los caminos son iguales. Algunos son más largos, algunos no están en buen estado (de modo que debes ir más lento), algunos tienen más tráfico... En resumen: necesitas más tiempo para atravesar algunos caminos que otros. Podemos representar ese tiempo con pesos que asignamos a los caminos (aristas del grafo). En el ejemplo, supongamos que cada número representa el número de horas que toma atravesar un camino. Ello significa que ir de A a B toma 3 horas si usas el camino que las conecta directamente.
+
+Como descubrirás, puedes representar muchas cosas distintas (tiempo, distancia, dinero...) con los pesos en las aristas de un grafo.
 
 # Paths
 
