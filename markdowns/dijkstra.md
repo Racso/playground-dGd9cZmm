@@ -65,10 +65,10 @@ Aquí está una descripción del algoritmo:
 4. Marca el nodo actual `A` como visitado.
 5. Si hay nodos no visitados, ve al paso 2.
 
-# Exercise
-The shown Python function is used during step 2 in the algorithm. It selects the node that should be set as current node. Fix it so it picks the correct node.
+# Ejercicio
+La función de Python que se muestra debajo se usa durante el paso 2 del algoritmo para seleccionar el nodo que debe establecerse como nodo actual. Corrígela para que elija el nodo correcto.
 
-@[The shown function should select a new current node for Dijkstra's Algorithm. Fix it so it does it correctly.]({"stubs": ["nodes.py"], "command": "python3 test_nodes.py"})
+@[La función mostrada debe seleccionar un nuevo nodo actual para el algoritmo de Dijkstra. Corrígela para que lo haga correctamente.]({"stubs": ["nodes.py"], "command": "python3 test_nodes.py"})
 
-# Next step
-To obtain the paths that correspond to those minimum values, we simply need to keep track of the nodes every time we change the minimum distance of a node. Keep reading to check it out!
+# Siguiente paso
+Para obtener las rutas que corresponden a esos valores mínimos, simplemente necesitamos llevar la cuenta de los nodos cada vez que cambiamos la mínima distancia de un nodo. ¡Sigue leyendo para verlo!
