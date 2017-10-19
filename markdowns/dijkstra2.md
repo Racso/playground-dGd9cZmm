@@ -2,7 +2,7 @@
 
 Vamos a ejecutar el algoritmo de nuevo en nuestro grafo:
 
-![Graph example](graph.png "")
+![Grafo de ejemplo](graph.png "")
 
 Esta vez, sin embargo, vamos a llevar un registro de las actuales rutas más cortas. Todas empiezan vacías, excepto la del nodo inicial, que simplemente lo contiene:
 
@@ -20,25 +20,25 @@ Vamos a revisar los vecinos de nuestro nodo actual. Empezaremos con B. Añadimos
 
 Repetimos el procedimiento con los vecinos A y D. Después de eso, nuestro grafo y nuestras rutas son:
 
-![Graph example](graph_cok.png "")
+![Grafo de ejemplo](graph_cok.png "")
 
 ```python
-path to A = C, A
-path to B = C, B
-path to C = C
-path to D = C, D
-path to E = empty
+ruta hasta A = C, A
+ruta hasta B = C, B
+ruta hasta C = C
+ruta hasta D = C, D
+ruta hasta E = vacía
 ```
 Nuestro nodo actual ahora es A. Verificamos su único vecino no visitado, B. Cuando reemplazamos la mínima distancia de B de 7 a 4, también reemplazamos su ruta actual con la ruta del nodo actual A (`C, A`) más B: `ruta hasta B = C, A, B`.
 
-![Graph example](graph_a1.png "")
+![Grafo de ejemplo](graph_a1.png "")
 
 ```python
-path to A = C, A
-path to B = C, A, B
-path to C = C
-path to D = C, D
-path to E = empty
+ruta hasta A = C, A
+ruta hasta B = C, A, B
+ruta hasta C = C
+ruta hasta D = C, D
+ruta hasta E = vacía
 ```
 
 Marcamos A como visitado y seleccionamos nuestro próximo nodo actual: D. Verificaremos dos vecinos: B y E.
@@ -47,26 +47,26 @@ Cuando verificamos B, no reemplazamos su mínima distancia (ya que el 4 existent
 
 Luego verificamos E, actualizamos su mínima distancia (9, que es menos que infinito) y su ruta (`ruta hasta E = C, D, E`, que es la `ruta hasta D` más E), y obtenemos esto:
 
-![Graph example](graph_b.png "")
+![Grafo de ejemplo](graph_b.png "")
 
 ```python
-path to A = C, A
-path to B = C, A, B
-path to C = C
-path to D = C, D
-path to E = C, D, E
+ruta hasta A = C, A
+ruta hasta B = C, A, B
+ruta hasta C = C
+ruta hasta D = C, D
+ruta hasta E = C, D, E
 ```
 
 Vamos a adelantarnos un poco: continuamos aplicando el algoritmo hasta que esté listo. Una vez terminemos, nuestro grafo y rutas serán:
 
-![Graph example](graph_final.png "")
+![Grafo de ejemplo](graph_final.png "")
 
 ```python
-path to A = C, A
-path to B = C, A, B
-path to C = C
-path to D = C, D
-path to E = C, A, B, E
+ruta hasta A = C, A
+ruta hasta B = C, A, B
+ruta hasta C = C
+ruta hasta D = C, D
+ruta hasta E = C, A, B, E
 ```
 
 ¡Felicitaciones! Esas son las mínimas rutas entre C y cualquier otro nodo.
