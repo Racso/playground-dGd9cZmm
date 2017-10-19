@@ -48,22 +48,22 @@ Marcamos D como visitado y establecemos nuestro nodo actual en B.
 
 ![Graph example](graph_b.png "")
 
-Almost there. We only need to check E. 4 + 1 = 5, which is less than E's minimum distance (9), so we leave the 5. Then, we mark B as visited and set E as the current node.
+Casi terminamos. Sólo debemos verificar E. 4 + 1 = 5, que es menos que la distancia mínima de E (9), así que dejamos el 5. Marcamos B como visitado y establecemos E como el nodo actual.
 
 ![Graph example](graph_e.png "")
 
-E doesn't have any non-visited neighbours, so we don't need to check anything. We mark it as visited.
+E no tiene vecinos no visitados, así que no verificamos nada. Lo marcamos como visitado.
 
 ![Graph example](graph_final.png "")
 
-As there are not univisited nodes, we're done! The minimum distance of each node now actually represents the minimum distance from that node to node C (the node we picked as our initial node)!
+Como no hay nodos no visitados, ¡terminamos! La distancia mínima de cada nodo ahora representa la mínima distancia entre ese nodo y el nodo C (el nodo que elegimos como nodo inicial).
 
-Here's a description of the algorithm:
-1. Mark your selected initial node with a current distance of 0 and the rest with infinity.
-2. Set the non-visited node with the smallest current distance as the current node `C`.
-3. For each neighbour `N` of your current node `C`: add the current distance of `C` with the weight of the edge connecting `C`-`N`. If it's smaller than the current distance of `N`, set it as the new current distance of `N`.
-4. Mark the current node `C` as visited.
-5. If there are non-visited nodes, go to step 2.
+Aquí está una descripción del algoritmo:
+1. Marca el nodo inicial que elegiste con una distancia actual de 0 y el resto con infinito.
+2. Establece el nodo no visitado con la menor distancia actual como el nodo actual `A`.
+3. Para cada vecino `V` de tu nodo actual `A`: suma la distancia actual de `A` con el peso de la arista que conecta a `A` con `V`. Si el resultado es menor que la distancia actual de `V`, establécelo como la nueva distancia actual de `V`.
+4. Marca el nodo actual `A` como visitado.
+5. Si hay nodos no visitados, ve al paso 2.
 
 # Exercise
 The shown Python function is used during step 2 in the algorithm. It selects the node that should be set as current node. Fix it so it picks the correct node.
