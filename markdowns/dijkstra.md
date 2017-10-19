@@ -1,28 +1,28 @@
-# Dijkstra's Algorithm
+# El algoritmo de Dijkstra
 
-Dijkstra's Algorithm allows you to calculate the shortest path between one node (you pick which one) and _every other node in the graph_. You'll find a description of the algorithm at the end of this page, but, let's study the algorithm with an explained example! Let's calculate the shortest path between node C and the other nodes in our graph:
+El algoritmo de Dijkstra te permite calcular la ruta más corta entre un nodo (tú eliges cuál) y **todos los demás nodos en el grafo**. Encontrarás una descripción del algoritmo al final de esta página, pero ¡vamos a estudiarlo con un ejemplo explicado! Calcularemos la distancia más corta entre el nodo C y los demás nodos del grafo:
 
-![Graph example](graph.png "")
+![Grafo de ejemplo](graph.png "")
 
-During the algorithm execution, we'll mark every node with its _minimum distance_ to node C (our selected node). For node C, this distance is 0. For the rest of nodes, as we still don't know that minimum distance, it starts being infinity (∞):
+Durante la ejecución del algoritmo, iremos marcando cada nodo con su _distancia mínima_ al nodo C (nuestro nodo elegido). Para el nodo C, esta distancia es 0. Para el resto de nodos, como todavía no conocemos esa distancia mínima, empieza siendo infinita (∞):
 
-![Graph example](graph_c.png "")
+![Grafo de ejemplo](graph_c.png "")
 
-We'll also have a _current node_. Initially, we set it to C (our selected node). In the image, we mark the current node with a red dot.
+También tendremos un _nodo actual_. Inicialmente, el nodo actual será C (nuestro nodo elegido). En la imagen, marcaremos el nodo actual con un punto rojo.
 
-Now, we check the neighbours of our current node (A, B and D) in no specific order. Let's begin with B. We add the minimum distance of the current node (in this case, 0) with the weight of the edge that connects our current node with B (in this case, 7), and we obtain 0 + 7 = 7. We compare that value with the minimum distance of B (infinity); the lowest value is the one that remains as the minimum distance of B (in this case, 7 is less than infinity):
+Ahora, revisaremos los vecinos de nuestro nodo actual (A, B y D) en cualquier orden. Empecemos con B. Sumamos la mínima distancia del nodo actual (en este caso, 0) con el peso de la arista que conecta al nodo actual con B (en este caso, 7), y obtenemos 0 + 7 = 7. Comparamos ese valor con la mínima distancia de B (infinito); el valor más pequeño es el que queda como la distancia mínima de B (en este caso, 7 es menos que infinito):
 
 ![Graph example](graph_c1.png "")
 
-So far, so good. Now, let's check neighbour A. We add 0 (the minimum distance of C, our current node) with 1 (the weight of the edge connecting our current node with A) to obtain 1. We compare that 1 with the minimum distance of A (infinity), and leave the smallest value:
+Bien. Ahora revisaremos al vecino A. Sumamos 0 (la distancia mínima de C, nuestro nodo actual) con 1 (el peso de la arista que conecta nuestro nodo actual con A) para obtener 1. Comparamos ese 1 con la mínima distancia de A (infinito) y dejamos el menor valor:
 
 ![Graph example](graph_c2.png "")
 
-OK. Repeat the same procedure for D:
+OK. Repetimos el procedimiento para D:
 
 ![Graph example](graph_c3.png "")
 
-Great. We have checked all the neighbours of C. Because of that, we mark it as _visited_. Let's represent visited nodes with a green check mark:
+Genial. Hemos revisado todos los vecinos de C. Por ello, lo marcamos como _visitado_. Representemos a los nodos visitados con una marca de verificación verde:
 
 ![Graph example](graph_cok.png "")
 
