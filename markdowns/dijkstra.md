@@ -26,25 +26,25 @@ Genial. Hemos revisado todos los vecinos de C. Por ello, lo marcamos como _visit
 
 ![Graph example](graph_cok.png "")
 
-We now need to pick a new _current node_. That node must be the unvisited node with the smallest minimum distance (so, the node with the smallest number and no check mark). That's A. Let's mark it with the red dot:
+Ahora debemos seleccionar un nuevo _nodo actual_. Ese nodo debe ser el nodo no visitado con la menor distancia mínima, es decir, el nodo con el menor número y sin marca de verificación verde. En este caso, ese nodo es A. Vamos a marcarlo con el punto rojo:
 
 ![Graph example](graph_a.png "")
 
-And now we repeat the algorithm. We check the neighbours of our current node, ignoring the visited nodes. This means we only check B.
+Ahora, repetimos el algoritmo. Revisamos los vecinos de nuestro nodo actual, ignorando los visitados. Esto significa que solo revisaremos B.
 
-For B, we add 1 (the minimum distance of A, our current node) with 3 (the weight of the edge connecting A and B) to obtain 4. We compare that 4 with the minimum distance of B (7) and leave the smallest value: 4.
+Para B, sumamos 1 (la distancia mínima de A, nuestro nodo actual) con 3 (el peso de la arista conectando a A con B) para obtener 4. Comparamos ese 4 con la distancia mínima de B (7) y dejamos el menor valor: 4.
 
 ![Graph example](graph_a1.png "")
 
-Afterwards, we mark A as visited and pick a new current node: D, which is the non-visited node with the smallest current distance.
+Después, marcamos A como visitado y elegimos un nuevo nodo: D, que es el nodo no visitado con la menor distancia mínima.
 
 ![Graph example](graph_d.png "")
 
-We repeat the algorithm again. This time, we check B and E.
+Repetimos el algoritmo de nuevo. Esta vez, revisamos B y E.
 
-For B, we obtain 2 + 5 = 7. We compare that value with B's minimum distance (4) and leave the smallest value (4). For E, we obtain 2 + 7 = 9, compare it with the minimum distance of E (infinity) and leave the smallest one (9).
+Para B, obtenemos 2 + 5 = 7. Comparamos ese valor con la distancia mínima de B (4) y dejamos el menor valor (4). Para E, obtenemos 2 + 7 = 9, lo comparamos con la distancia mínima de E (infinito) y dejamos el valor menor (9).
 
-We mark D as visited and set our current node to B.
+Marcamos D como visitado y establecemos nuestro nodo actual en B.
 
 ![Graph example](graph_b.png "")
 
